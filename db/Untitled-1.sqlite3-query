@@ -1,0 +1,19 @@
+-- database: ./expenseTracker.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+CREATE TABLE transactions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  type TEXT NOT NULL,
+  category TEXT,
+  amount REAL NOT NULL,
+  date TEXT NOT NULL,
+  description TEXT
+);
+
+CREATE TABLE categories (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  type TEXT NOT NULL
+);
+
